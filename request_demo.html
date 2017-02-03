@@ -143,10 +143,10 @@
       <div class="row">
         <div class="col-sm-8">
           <h1>
-            Documentation
+             预约演示
           </h1>
           <p>
-            Find out what's included in your theme and how to compile source files. Plus examples and code snippets for components.
+想要我们的一个机器人看看吗？ Reebotic®提供我们产品的现场演示。 填写以下表格，我们将在24小时内与您联系以协调预约的详细安排。 提示：对于“请求日期”框，我们建议您使用小组接下来的三个培训日期。
           </p>
         </div>
       </div>
@@ -157,693 +157,202 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-9">
-          <div class="docs-body">
-            <h2 id="intro">Intro</h2>
-            <hr>
-            <p style="font-size: 19px;margin-bottom: 20px;line-height: 30px;">
-              Hi, I hope you find this theme useful! it has been crafted on top of the Bootstrap framework with new plugins and components, to help you build great websites and projects.
-            </p>
-            <p>
-              This theme includes 3 categories: a public multipurpose theme for businesses, startups, restaurants, photographers, etc. an agency theme for creative businesses, and an e-commerce theme for online stores, which you can navigate using the Theme demos link above.
-            </p>
-            <p>
-              This page includes all the documentation to understand how it is organized, make changes to the source code, compile and extend it to fit your needs.
-            </p>
-            <p>
-              Thanks, and enjoy!
-            </p>
 
-            <h2 id="whats-included">What's included</h2>
-            <hr>
-            <p>
-              Inside the theme folder you’ll find the following directories and files, organizing resources and providing both compiled and minified distribution files, as well as the source files.
-            </p>
-            <pre>
-  theme/
-    ├── gulpfile.js
-    ├── package.json
-    ├── README.md
-    ├── images/
-    ├── fonts/
-    ├── scss/
-    │   ├── bootstrap/
-    │   ├── vendor/
-    │   ├── custom/
-    │   └── variables.scss
-    │   └── theme.scss
-    ├── js/
-    │   ├── bootstrap/
-    │   └── vendor/
-    │   └── custom/
-    │   └── theme.js
-    └── dist/
-        ├── theme.min.css
-        ├── theme.min.css.map
-        ├── ecommerce.min.css
-        ├── ecommerce.min.css.map
-        └── theme.min.js</pre>
-
-            <h2 id="gulpfile">Gulpfile.js</h2>
-            <hr>
-            <p>
-              The theme includes a custom Gulp file, which can be used to quickly re-compile and minify the theme’s SCSS and JS files and also to optimize images. You’ll need to install both Node and Gulp before using our included <code>gulpfile.js</code>.
-            </p>
-            <p>
-              Once <a href="https://nodejs.org/en/" target="_blank">node</a> is installed, run the following command to install Gulp.
-            </p>
-            <pre>$ npm install gulp -g</pre>
-            <p>
-              After installing gulp, make sure you’ve installed the rest of the theme’s dependencies:
-            </p>
-            <pre>$ npm install</pre>
-            <p>
-              Now you're ready to to modify your source files and run <code>gulp</code> to generate new local <code>dist/</code> files automatically. We've also included a <code>gulp watch</code> command so it keeps track of changes and compile the files on the fly.
-            </p>
-
-            <h2 id="theme-source-code">Theme source code</h2>
-            <hr>
-            <p>
-              The <code>scss/</code> and <code>js/</code> directories contain the source code for the CSS and JS. Within these folders you'll find the next subdirectories:
-            </p>
-            <ul>
-              <li><code>bootstrap/</code>, which contains the most recently released Bootstrap (v3.3.7).</li>
-              <li><code>custom/</code>, which contains all the styles and components made specifically for this theme.</li>
-              <li><code>vendor/</code>, contains all the external plugins and their styles that are used in this theme.</li>
-            </ul>
-            <p>
-              The <code>dist/</code> folder includes everything above built into a single CSS and JS file already compressed and minified. 
-            </p>
-            <p>
-              For the styles, <code>scss/theme.scss</code> is the entry point for scss files. To make changes, simply modify your local custom files or edit the imports listed here.
-            </p>
-
-            <h2 id="basic-template">Basic template</h2>
-            <hr>
-            <p>
-              The basic template is a guideline for how to structure your pages when building new ones using this theme. Included below are all the necessary bits for using the theme’s CSS and JS.
-            </p>
-
-            <pre>
-<code class="html">
-&lt;!doctype html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-
-    &lt;title&gt;Bootstrap theme&lt;/title&gt;
-
-    &lt;!-- Theme CSS file --&gt;
-    &lt;link rel="stylesheet" type="text/css" href="dist/theme.min.css" /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello world!&lt;/h1&gt;
-
-    &lt;!-- include jQuery (required) and the theme JS file --&gt;
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;script src="dist/theme.min.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-            <h2 id="new-components">New components</h2>
-            <hr>
-            <h3 id="icons">Icons</h3>
-            <p>
-              Beside from the already included <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">glyphicons</a> from Bootstrap, this theme comes ready with some of the most famous icon bundles:
-            </p>
-            
-            <br>
-            <h4>
-              <a href="http://ionicons.com/" target="_blank">Ionicons</a>
-            </h4>
-            <p>
-              The premium icon font for the Ionic Framework.
-            </p>
-
-            <br>
-            <h4>
-              <a href="http://www.entypo.com/" target="_blank">Entypo</a>
-            </h4>
-            <p>
-              Entypo pictograms by Daniel Bruce — www.entypo.com
-            </p>
-
-            <br>
-            <h4>
-              <a href="http://rhythm.nikadevs.com/content/icons-et-line" target="_blank">Icons ET-Line</a>
-            </h4>
-            <p>
-              A set of 100 high quality outline icons.
-            </p>
-
-            <br>
-            <h4>
-              <a href="http://fontawesome.io" target="_blank">Font Awesome</a>
-            </h4>
-            <p>
-              The iconic font and CSS toolkit.
-            </p>
-
-            <br>
-            <h4>Examples</h4>
-            <p>
-              All these icons can be placed in just about any other element, so long as they are a separate HTML element (e.g., a <code>&lt;i&gt;</code>). See the examples below for how to put them to use.
-            </p>
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn btn-default" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn default
-                </button>
-                <button class="btn btn-primary" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn primary
-                </button>
-                <button class="btn btn-success" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn success
-                </button>
-                <button class="btn btn-info" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn info
-                </button>
-                <button class="btn btn-warning" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn warning
-                </button>
-                <button class="btn btn-danger" type="button">
-                  <i class="entypo-thumbs-up"></i>
-                  Btn danger
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn btn-default" type="button"&gt;
-  &lt;i class="entypo-thumbs-up"&gt;&lt;/i&gt;
-  Btn default
-&lt;/button&gt;
-&lt;button class="btn btn-primary" type="button"&gt;
-  &lt;i class="entypo-thumbs-up"&gt;&lt;/i&gt;
-  Btn primary
-&lt;/button&gt;
-&lt;button class="btn btn-success" type="button"&gt;
-  &lt;i class="entypo-thumbs-up"&gt;&lt;/i&gt;
-  Btn success
-&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <h3 id="pill-buttons">Pill buttons</h3>
-            
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-pill btn-pill-default btn-pill-sm">
-                  Default
-                </button>
-                <button class="btn-pill btn-pill-dark btn-pill-sm">
-                  Dark
-                </button>
-                <button class="btn-pill btn-pill-primary btn-pill-sm">
-                  Primary
-                </button>
-                <button class="btn-pill btn-pill-success btn-pill-sm">
-                  Success
-                </button>
-                <button class="btn-pill btn-pill-info btn-pill-sm">
-                  Info
-                </button>
-                <button class="btn-pill btn-pill-warning btn-pill-sm">
-                  Warning
-                </button>
-                <button class="btn-pill btn-pill-danger btn-pill-sm">
-                  Danger
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-pill btn-pill-sm btn-pill-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-success"&gt;Success&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-sm btn-pill-danger"&gt;Danger&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-pill btn-pill-default">
-                  Default
-                </button>
-                <button class="btn-pill btn-pill-dark">
-                  Dark
-                </button>
-                <button class="btn-pill btn-pill-primary">
-                  Primary
-                </button>
-                <button class="btn-pill btn-pill-success">
-                  Success
-                </button>
-                <button class="btn-pill btn-pill-info">
-                  Info
-                </button>
-                <button class="btn-pill btn-pill-warning">
-                  Warning
-                </button>
-                <button class="btn-pill btn-pill-danger">
-                  Danger
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-pill btn-pill-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-success"&gt;Success&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-danger"&gt;Danger&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-pill btn-pill-default btn-pill-lg">
-                  Default
-                </button>
-                <button class="btn-pill btn-pill-dark btn-pill-lg">
-                  Dark
-                </button>
-                <button class="btn-pill btn-pill-primary btn-pill-lg">
-                  Primary
-                </button>
-                <button class="btn-pill btn-pill-success btn-pill-lg">
-                  Success
-                </button>
-                <button class="btn-pill btn-pill-info btn-pill-lg">
-                  Info
-                </button>
-                <button class="btn-pill btn-pill-warning btn-pill-lg">
-                  Warning
-                </button>
-                <button class="btn-pill btn-pill-danger btn-pill-lg">
-                  Danger
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-pill btn-pill-lg btn-pill-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-success"&gt;Success&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-pill btn-pill-lg btn-pill-danger"&gt;Danger&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <h3 id="shadow-buttons">Shadow buttons</h3>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-shadow btn-shadow-sm btn-shadow-default">
-                  Default
-                </button>
-                <button class="btn-shadow btn-shadow-sm btn-shadow-primary">
-                  Primary
-                </button>
-                <button class="btn-shadow btn-shadow-sm btn-shadow-dark">
-                  Dark
-                </button>
-                <button class="btn-shadow btn-shadow-sm btn-shadow-info">
-                  Info
-                </button>
-                <button class="btn-shadow btn-shadow-sm btn-shadow-warning">
-                  Warning
-                </button>
-                <button class="btn-shadow btn-shadow-sm btn-shadow-success">
-                  Success
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-sm btn-shadow-success"&gt;Success&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-shadow btn-shadow-default">
-                  Default
-                </button>
-                <button class="btn-shadow btn-shadow-primary">
-                  Primary
-                </button>
-                <button class="btn-shadow btn-shadow-dark">
-                  Dark
-                </button>
-                <button class="btn-shadow btn-shadow-info">
-                  Info
-                </button>
-                <button class="btn-shadow btn-shadow-warning">
-                  Warning
-                </button>
-                <button class="btn-shadow btn-shadow-success">
-                  Success
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-shadow btn-shadow-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-success"&gt;Success&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn-shadow btn-shadow-lg btn-shadow-default">
-                  Default
-                </button>
-                <button class="btn-shadow btn-shadow-lg btn-shadow-primary">
-                  Primary
-                </button>
-                <button class="btn-shadow btn-shadow-lg btn-shadow-dark">
-                  Dark
-                </button>
-                <button class="btn-shadow btn-shadow-lg btn-shadow-info">
-                  Info
-                </button>
-                <button class="btn-shadow btn-shadow-lg btn-shadow-warning">
-                  Warning
-                </button>
-                <button class="btn-shadow btn-shadow-lg btn-shadow-success" style="margin-top:15px;">
-                  Success
-                </button>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-default"&gt;Default&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn-shadow btn-shadow-lg btn-shadow-success"&gt;Success&lt;/button&gt;</code></pre>
-              </div>
-            </div>
-
-            <h3 id="transparent-navbar">
-              Transparent Navbar
-            </h3>
-
-            <p>
-              Use the new <code>.navbar-transparent</code> variation for placing navbars over backgrounds and interactive content.
-            </p>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="transparent-navbar-wrapper">
-                  <nav class="navbar navbar-transparent" role="navigation">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                          <img src="images/logo-alt-w.png" />
-                          Spacial
-                        </a>
-                      </div>
-
-                      <div class="collapse navbar-collapse" id="navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                          <li>
-                            <a href="#">About us</a>
-                          </li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              Dropdown
-                              <i class="ion-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                              <li><a href="#">Hi there!</a></li>
-                              <li><a href="#">Also hi!</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#" class="rounded">Link</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-
-                  <div class="transparent-navbar-header" style="background-image: linear-gradient(-45deg, #5F6190 0%, #525480 20%, #131b2e 100%);">
+	<div class="content_wrapper">
+      <div class="container">
+		<div class="row">
+          <div class="entry span9">
+            <div class="main_content_wrapper has_right_sidebar no_left_sidebar">
+              <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_2' ><a id='gf_2' name='gf_2' class='gform_anchor' ></a>
+                <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2'  action='/test-drive/#gf_2'>
+                <div class='gform_body'>
+                  <ul id='gform_fields_2' class='gform_fields top_label description_below'>
+                  <li id='field_2_1' class='gfield' >
+                  <label class='gfield_label' for='input_2_1'>
+                    演示类型
+                  </label>
+                  <div class='ginput_container'>
+                    <select name='input_1' id='input_2_1'  class='medium gfield_select' tabindex='1' >
+                    <option value='In-Person Demonstration' >
+                      现场演示
+                    </option>
+                    </select>
                   </div>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;nav class="navbar navbar-transparent" role="navigation"&gt;
-  &lt;div class="container-fluid"&gt;
-    &lt;div class="navbar-header"&gt;
-      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"&gt;
-        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-        &lt;span class="icon-bar"&gt;&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;a class="navbar-brand" href="index.html"&gt;
-        Spacial
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class="collapse navbar-collapse" id="navbar-collapse"&gt;
-      &lt;ul class="nav navbar-nav navbar-right"&gt;
-        &lt;li&gt;&lt;a href="#"&gt;About us&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#" class="rounded"&gt;Link&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-&lt;div class="transparent-navbar-header" style="background-image: linear-gradient(-45deg, #5F6190 0%, #525480 20%, #131b2e 100%);"&gt;
-&lt;/div&gt;</code></pre>
-              </div>
-            </div>
+                  </li>
+                  <li id='field_2_18' class='gfield gfield_contains_required' >
+                    <label class='gfield_label' for='input_2_18'>
+                    需要哪款产品
+                    <span class='gfield_required'> *</span>
+                    </label>
+                    <div class='ginput_container'>
+                      <select name='input_18' id='input_2_18'  class='medium gfield_select' tabindex='2' >
+                        <option value='Avatar III Tactical Robot' >
+                          Avatar维达监侦机器人
+                        </option>
+                        <option value='Avatar III EOD Robot' >
+                          Colin远程机器人
+                        </option>
+                      </select>
+                    </div>
+                  </li>
+                  <li id='field_2_10' class='gfield gf_left_half gfield_contains_required' >
+                    <label class='gfield_label' for='input_2_10'>
+                      名字
+                      <span class='gfield_required'>*</span>
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_10' id='input_2_10' type='text' value='' class='large'  tabindex='3'   />
+                    </div>
+                  </li>
+                  <li id='field_2_11' class='gfield    gf_right_half' >
+                    <label class='gfield_label' for='input_2_11'>
+                      姓氏
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_11' id='input_2_11' type='text' value='' class='large'  tabindex='4'   />
+                    </div>
+                  </li>
+                  <li id='field_2_5' class='gfield    gf_left_half' >
+                    <label class='gfield_label' for='input_2_5'>
+                      职位
+                    </label>
+                    <div class='ginput_container'>
+                    <input name='input_5' id='input_2_5' type='text' value='' class='medium'  tabindex='5'   />
+                    </div>
+                  </li>
+                  <li id='field_2_4' class='gfield    gf_left_half' >
+                    <label class='gfield_label' for='input_2_4'>
+                      部门
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_4' id='input_2_4' type='text' value='' class='large'  tabindex='6'   />
+                    </div>
+                  </li>
+                  <li id='field_2_6' class='gfield    gf_right_half' >
+                    <label class='gfield_label' for='input_2_6'>
+                      省份</label>
+                    <select name="Province" id="Province" >
+                      <option value="" selected>请选择</option>
+                      <option value="江苏省">江苏省</option>
+                      <option value="北京">北京</option>
+                      <option value="天津">天津</option>
+                      <option value="上海">上海</option>
+                      <option value="重庆">重庆</option>
+                      <option value="广东省">广东省</option>
+                      <option value="浙江省">浙江省</option>
+                      <option value="福建省">福建省</option>
+                      <option value="湖南省">湖南省</option>
+                      <option value="湖北省">湖北省</option>
+                      <option value="山东省">山东省</option>
+                      <option value="辽宁省">辽宁省</option>
+                      <option value="吉林省">吉林省</option>
+                      <option value="云南省">云南省</option>
+                      <option value="四川省">四川省</option>
+                      <option value="安徽省">安徽省</option>
+                      <option value="江西省">江西省</option>
+                      <option value="黑龙江省">黑龙江省</option>
+                      <option value="河北省">河北省</option>
+                      <option value="陕西省">陕西省</option>
+                      <option value="海南省">海南省</option>
+                      <option value="河南省">河南省</option>
+                      <option value="山西省">山西省</option>
+                      <option value="内蒙古">内蒙古</option>
+                      <option value="广西">广西</option>
+                      <option value="贵州省">贵州省</option>
+                      <option value="宁夏">宁夏</option>
+                      <option value="青海省">青海省</option>
+                      <option value="新疆">新疆</option>
+                      <option value="西藏">西藏</option>
+                      <option value="甘肃省">甘肃省</option>
+                      <option value="台湾省">台湾省</option>
+                      <option value="香港">香港</option>
+                      <option value="澳门">澳门</option>
+                      <option value="国外">国外</option>
+                    </select>
+                  </li>
+                  <li id='field_2_15' class='gfield gf_left_half gfield_contains_required' >
+                    <label class='gfield_label' for='input_2_15'>
+                      电话
+                      <span class='gfield_required'>*</span>
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_15' id='input_2_15' type='text' value='' class='medium'  tabindex='8'   />
+                    </div>
+                  </li>
+                  <li id='field_2_3' class='gfield    gf_left_half           gfield_contains_required' >
+                    <label class='gfield_label' for='input_2_3'>
+                      邮箱
+                      <span class='gfield_required'> *</span>
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_3' id='input_2_3' type='text' value='' class='large'  tabindex='9'   />
+                    </div>
+                  </li>
+                  <li id='field_2_7' class='gfield    gf_left_third' >
+                    <label class='gfield_label' for='input_2_7'>
+                      预约时间（培训日期 #1）
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_7' id='input_2_7' type='datetime' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='10' />
+                    </div>
+                    <input type='hidden' id='gforms_calendar_icon_input_2_7' class='gform_hidden' /> 
+                  </li>
+                  <li id='field_2_12' class='gfield    gf_middle_third' >
+                    <label class='gfield_label' for='input_2_12'>
+                      预约时间（培训日期 #2）
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_12' id='input_2_12' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='11' />
+                    </div>
+                    <input type='hidden' id='gforms_calendar_icon_input_2_12' class='gform_hidden'>
 
-            <h2 id="plugins">
-              Plugins
-            </h2>
-            <hr>
-
-            <h3 id="zoomerang">
-              Zoomerang
-            </h3>
-            <p>
-              This zoom plugin made by <a href="https://github.com/yyx990803/zoomerang" target="_blank">yyx990803</a> provides image zoom functionality. Add a <code>data-trigger="zoomerang"</code> attribute to any image you want to make zoomable.
-            </p>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <img src="images/unsplash/photo-1442965416224-f6a7eca980fa.jpeg" style="width: 250px;" data-trigger="zoomerang">
+                  </li>
+                  <li id='field_2_14' class='gfield    gf_right_third' >
+                    <label class='gfield_label' for='input_2_14'>
+                      预约时间（培训日期 #3）
+                    </label>
+                    <div class='ginput_container'>
+                      <input name='input_14' id='input_2_14' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='12' />
+                    </div>
+                    <input type='hidden' id='gforms_calendar_icon_input_2_14' class='gform_hidden' />
+                  </li>
+                  <li id='field_2_13' class='gfield' >
+                    <label class='gfield_label' for='input_2_13'>
+                      留言（或者，您从哪里听说我们的？）
+                    </label>
+                    <div class='ginput_container'>
+                      <textarea name='input_13' id='input_2_13' class='textarea medium' tabindex='13'   rows='10' cols='50'>
+                      </textarea>
+                    </div>
+                  </li>
+                  <li id='field_2_17' class='gfield     gform_hidden' >
+                    <input name='input_17' id='input_2_17' type='hidden' class='gform_hidden' value='Web' />
+                  </li>
+                </ul>
               </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;img data-trigger="zoomerang" src="images/image1.jpg" style="width: 250px;"&gt;</code></pre>
-              </div>
-            </div>
 
-            <h3 id="scrolling">
-              Smooth page scrolling
-            </h3>
-            <p>
-              The smooth scrolling feature is a nice way to let your users navigate your content while keeping track of where they are on the page, just like this page with the right sidebar.
-            </p>
-            <p>
-              You only need a link that users will click with the class <code>.scroll</code> to enable the functionality:
-            </p>
-            <pre>
-<code class="html" style="line-height: 10px;">
-&lt;a href="#intro" class="scroll"&gt;Intro&lt;/a&gt;</code></pre>
-            <p>
-              And a section anywhere in the page with the same unique ID that you want to navigate to:
-            </p>
-            <pre>
-<code class="html" style="line-height: 10px;">
-&lt;div id="intro""&gt;...&lt;/div&gt;</code></pre>
+              <div class='gform_footer top_label'>
 
-            <h3 id="slider">
-              Slider
-            </h3>
-            <p>
-              This plugin made by <a href="https://tympanus.net/codrops/2014/03/18/inspiration-for-item-transitions/" target="_blank">Codrops</a> enables a slider functionality with 14 different effects.
-            </p>
-            <p>
-              Effects:
-              <ul class="slider-options">
-                <li><a href="#" data-option="slider-effect" data-class="fxSideSwing" class="active">Side Swing</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxSoftScale">Soft Scale</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxPressAway">Press Away</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxPushReveal">Push Reveal</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxVGrowth">Vertical Growth</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxArchiveMe">Archive Me</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxLetMeIn">Let Me In</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxFortuneWheel">Fortune Wheel</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxSwipe">Swipe</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxSnapIn">Snap In</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxStickIt">Stick It</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxSlideBehind">Slide Behind</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxSoftPulse">Soft Pulse</a></li>
-                <li><a href="#" data-option="slider-effect" data-class="fxCliffDiving">Cliff Diving</a></li>
-              </ul>
-            </p>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div id="spacial-slider" class="slider-component fxSideSwing">
-                  <ul class="itemwrap">
-                    <li class="current">
-                      <div class="pic" style="background-image: url('images/unsplash/photo-1442965416224-f6a7eca980fa.jpeg');">
-                      </div>
-                      <h3>Slide 1 content</h3>
-                    </li>
-                    <li>
-                      <div class="pic" style="background-image: url('images/unsplash/photo-1470707592630-d4784581f809.jpeg');">
-                      </div>
-                      <h3>Slide 2 content</h3>
-                    </li>
-                    <li>
-                      <div class="pic" style="background-image: url('images/unsplash/photo-1422665717225-1a37f226c92a.jpeg');">
-                      </div>
-                      <h3>Slide 3 content</h3>
-                    </li>
-                    <li>
-                      <div class="pic" style="background-image: url('images/unsplash/photo-1454942901704-3c44c11b2ad1.jpeg');">
-                      </div>
-                      <h3>Slide 4 content</h3>
-                    </li>
-                  </ul>
-                  <nav>
-                    <a class="prev" href="#">
-                      <span class="icon-wrap"></span>
-                    </a>
-                    <a class="next" href="#">
-                      <span class="icon-wrap"></span>
-                    </a>
-                  </nav>
-                </div>
+                <input type='image' src='http://robotex.com/wp-content/themes/robotex/images/submit-btn.jpg' id='gform_submit_button_2' class='gform_image_button' alt='Submit' tabindex='14' />
+                <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=' />
+                <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+                <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+                <input type='hidden' class='gform_hidden' name='gform_unique_id' value='589490c3be39c' />
+                <input type='hidden' class='gform_hidden' name='state_2' value='YToyOntpOjA7czo2OiJhOjA6e30iO2k6MTtzOjMyOiI2NGEzNjUzMTk4NGYzMjA3MmQ3MDQ2N2I4MjUyNmFiOCI7fQ==' />
+                <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+                <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+                <input type='hidden' name='gform_field_values' value='' />
               </div>
-              <div class="panel-footer">
-                <pre>
-<code class="html">
-&lt;div id="spacial-slider" class="slider-component fxSideSwing"&gt;
-  &lt;ul class="itemwrap"&gt;
-    &lt;li class="current"&gt;
-      &lt;div class="pic" style="background-image: url('images/slide1.jpg');"&gt;
-      &lt;/div&gt;
-      &lt;h3&gt;Slide content&lt;/h3&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class="pic" style="background-image: url('images/slide2.jpg');"&gt;
-      &lt;/div&gt;
-      &lt;h3&gt;Slide content&lt;/h3&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class="pic" style="background-image: url('images/slide3.jpg');"&gt;
-      &lt;/div&gt;
-      &lt;h3&gt;Slide content&lt;/h3&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;nav&gt;
-    &lt;a class="prev" href="#"&gt;
-      &lt;span class="icon-wrap"&gt;&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="next" href="#"&gt;
-      &lt;span class="icon-wrap"&gt;&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/nav&gt;
-&lt;/div&gt;</code></pre>
-              </div>
-            </div>
+            </form>
           </div>
-        </div>
+        <iframe style='display:none;width:0px; height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2'></iframe>
+        <script type='text/javascript'>function gformInitSpinner_2(){jQuery('#gform_2').submit(function(){if(jQuery('#gform_ajax_spinner_2').length == 0){jQuery('#gform_submit_button_2').attr('disabled', true).after('<' + 'img id="gform_ajax_spinner_2"  class="gform_ajax_spinner" src="http://robotex.com/wp-content/plugins/gravityforms/images/spinner.gif" alt="" />');jQuery('#gform_wrapper_2 .gform_previous_button').attr('disabled', true); jQuery('#gform_wrapper_2 .gform_next_button, #gform_wrapper_2 .gform_image_button').attr('disabled', true).after('<' + 'img id="gform_ajax_spinner_2"  class="gform_ajax_spinner" src="http://robotex.com/wp-content/plugins/gravityforms/images/spinner.gif" alt="" />');}} );}jQuery(document).ready(function($){gformInitSpinner_2();jQuery('#gform_ajax_frame_2').load( function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_redirect = contents.indexOf('gformRedirect(){') >= 0;jQuery('#gform_submit_button_2').removeAttr('disabled');var is_form = !(form_content.length <= 0 || is_redirect);if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top);if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner_2();jQuery(document).trigger('gform_page_loaded', [2, current_page]);}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('#gforms_confirmation_message').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith('<' + 'div id=\'gforms_confirmation_message\' class=\'gform_confirmation_message_2\'' + '>' + confirmation_content + '<' + '/div' + '>');jQuery(document).scrollTop(jQuery('#gforms_confirmation_message').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [2]);}, 50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [2, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [2, 1]) } ); </script>
 
-        <div class="col-sm-3">
-          <nav class="nav-sidebar">
-            <ul class="nav">
-              <li>
-                <a href="#intro" class="scroll">Intro</a>
-              </li>
-              <li>
-                <a href="#whats-included" class="scroll">What's included</a>
-                <ul>
-                  <li>
-                    <a href="#gulpfile" class="scroll">Gulpfile.js</a>
-                  </li>
-                  <li>
-                    <a href="#theme-source-code" class="scroll">Theme source code</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#basic-template" class="scroll">Basic template</a>
-              </li>
-              <li>
-                <a href="#new-components" class="scroll">New components</a>
-                <ul>
-                  <li>
-                    <a href="#icons" class="scroll">Icons</a>
-                  </li>
-                  <li>
-                    <a href="#pill-buttons" class="scroll">Pill buttons</a>
-                  </li>
-                  <li>
-                    <a href="#shadow-buttons" class="scroll">Shadow buttons</a>
-                  </li>
-                  <li>
-                    <a href="#transparent-navbar" class="scroll">Transparent navbar</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#plugins" class="scroll">Plugins</a>
-                <ul>
-                  <li>
-                    <a href="#zoomerang" class="scroll">Zoomerang</a>
-                  </li>
-                  <li>
-                    <a href="#scrolling" class="scroll">Smooth scroll</a>
-                  </li>
-                  <li>
-                    <a href="#slider" class="scroll">Slider</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+            </div>
         </div>
-      </div>
-    </div>
+</div>
+</div>
+</div>
   </div>
 
   <script type="text/javascript">
@@ -863,7 +372,7 @@
       });
 
       // scrollspy on sidebar
-      $('body').scrollspy({ 
+      $('body').scrollspy({
         target: '.nav-sidebar',
         offset: 30
       });
