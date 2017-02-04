@@ -17,6 +17,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
   <script src="dist/theme.min.js"></script>
+
+  <script type="text/javascript">
+// Wait for the DOM to be ready
+    $(function() {
+      $("form[name='testdrive']").validate({
+        // Specify validation rules
+        rules: {
+          // The key name on the left side is the name attribute
+          // of an input field. Validation rules are defined
+          // on the right side
+          name: "required",
+          email: {
+            required: true,
+            // Specify that email should be validated
+            // by the built-in "email" rule
+            email: true
+          },
+          password: {
+            required: true,
+            minlength: 5
+          }
+        },
+        // Specify validation error messages
+        messages: {
+          name: "请输入您的姓名。",
+          password: {
+            required: "请输入密码",
+            minlength: "请输入至少5位字符长度的密码。"
+          },
+          email: "请输入正确的邮箱。"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+    });
+ </script>
+
 </head>
 <body>
   <!--[if lt IE 9]>
@@ -128,214 +168,168 @@
              预约演示
           </h1>
           <p>
-想要我们的一个机器人看看吗？ Reebotic®提供我们产品的现场演示。 填写以下表格，我们将在24小时内与您联系以协调预约的详细安排。 提示：对于“请求日期”框，我们建议您使用小组接下来的三个培训日期。
+想要我们的一个机器人看看吗？ Reebotic®提供我们产品的现场演示。 填写以下表格，我们将在24小时内与您联系以协调预约的详细安排。 提示：对于“预约日期”框，我们建议您使用小组接下来的三个培训日期。
           </p>
         </div>
       </div>
     </section>
   </div>
 
-  <div class="theme-docs-wrapper">
+  <div class="agency-contact-form">
     <div class="container">
       <div class="row">
         <div class="col-sm-9">
-
-	<div class="content_wrapper">
-      <div class="container">
-		<div class="row">
-          <div class="entry span9">
-            <div class="main_content_wrapper has_right_sidebar no_left_sidebar">
-              <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_2' ><a id='gf_2' name='gf_2' class='gform_anchor' ></a>
-                <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2'  action='/test-drive/#gf_2'>
-                <div class='gform_body'>
-                  <ul id='gform_fields_2' class='gform_fields top_label description_below'>
-                  <li id='field_2_1' class='gfield' >
-                  <label class='gfield_label' for='input_2_1'>
-                    演示类型
-                  </label>
+          <div class="main_content_wrapper has_right_sidebar no_left_sidebar">
+            <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_2' ><a id='gf_2' name='gf_2' class='gform_anchor' ></a>
+              <form action="" name="testdrive">
+              <!-- form enctype='multipart/form-data' target='gform_ajax_frame_2' name="testdrive" id='gform_2'  action="" -->
+              <div class='gform_body'>
+                <ul id='gform_fields_2' class='itemwrap' >
+                <li id='field_2_1' class='gfield' >
+                <div class='ginput_container'>
+                  <select name='drivetype' id='input_2_1'  class='medium gfield_select' tabindex='1' >
+                  <option value='In-Person Demonstration' >
+                    现场演示
+                  </option>
+                  </select>
+                </div>
+                </li>
+                <li id='field_2_18' class='gfield gfield_contains_required' >
                   <div class='ginput_container'>
-                    <select name='input_1' id='input_2_1'  class='medium gfield_select' tabindex='1' >
-                    <option value='In-Person Demonstration' >
-                      现场演示
-                    </option>
+                    <select name='producttype' id='input_2_18'  class='medium gfield_select' tabindex='2' >
+                      <option value='Avatar III Tactical Robot' >
+                        Avatar维达监侦机器人
+                      </option>
+                      <option value='Avatar III EOD Robot' >
+                        Colin远程机器人
+                      </option>
                     </select>
                   </div>
-                  </li>
-                  <li id='field_2_18' class='gfield gfield_contains_required' >
-                    <label class='gfield_label' for='input_2_18'>
-                    需要哪款产品
-                    <span class='gfield_required'> *</span>
-                    </label>
-                    <div class='ginput_container'>
-                      <select name='input_18' id='input_2_18'  class='medium gfield_select' tabindex='2' >
-                        <option value='Avatar III Tactical Robot' >
-                          Avatar维达监侦机器人
-                        </option>
-                        <option value='Avatar III EOD Robot' >
-                          Colin远程机器人
-                        </option>
-                      </select>
-                    </div>
-                  </li>
-                  <li id='field_2_10' class='gfield gf_left_half gfield_contains_required' >
-                    <label class='gfield_label' for='input_2_10'>
-                      名字
-                      <span class='gfield_required'>*</span>
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_10' id='input_2_10' type='text' value='' class='large'  tabindex='3'   />
-                    </div>
-                  </li>
-                  <li id='field_2_11' class='gfield    gf_right_half' >
-                    <label class='gfield_label' for='input_2_11'>
-                      姓氏
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_11' id='input_2_11' type='text' value='' class='large'  tabindex='4'   />
-                    </div>
-                  </li>
-                  <li id='field_2_5' class='gfield    gf_left_half' >
-                    <label class='gfield_label' for='input_2_5'>
-                      职位
-                    </label>
-                    <div class='ginput_container'>
-                    <input name='input_5' id='input_2_5' type='text' value='' class='medium'  tabindex='5'   />
-                    </div>
-                  </li>
-                  <li id='field_2_4' class='gfield    gf_left_half' >
-                    <label class='gfield_label' for='input_2_4'>
-                      部门
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_4' id='input_2_4' type='text' value='' class='large'  tabindex='6'   />
-                    </div>
-                  </li>
-                  <li id='field_2_6' class='gfield    gf_right_half' >
-                    <label class='gfield_label' for='input_2_6'>
-                      省份</label>
-                    <select name="Province" id="Province" >
-                      <option value="" selected>请选择</option>
-                      <option value="江苏省">江苏省</option>
-                      <option value="北京">北京</option>
-                      <option value="天津">天津</option>
-                      <option value="上海">上海</option>
-                      <option value="重庆">重庆</option>
-                      <option value="广东省">广东省</option>
-                      <option value="浙江省">浙江省</option>
-                      <option value="福建省">福建省</option>
-                      <option value="湖南省">湖南省</option>
-                      <option value="湖北省">湖北省</option>
-                      <option value="山东省">山东省</option>
-                      <option value="辽宁省">辽宁省</option>
-                      <option value="吉林省">吉林省</option>
-                      <option value="云南省">云南省</option>
-                      <option value="四川省">四川省</option>
-                      <option value="安徽省">安徽省</option>
-                      <option value="江西省">江西省</option>
-                      <option value="黑龙江省">黑龙江省</option>
-                      <option value="河北省">河北省</option>
-                      <option value="陕西省">陕西省</option>
-                      <option value="海南省">海南省</option>
-                      <option value="河南省">河南省</option>
-                      <option value="山西省">山西省</option>
-                      <option value="内蒙古">内蒙古</option>
-                      <option value="广西">广西</option>
-                      <option value="贵州省">贵州省</option>
-                      <option value="宁夏">宁夏</option>
-                      <option value="青海省">青海省</option>
-                      <option value="新疆">新疆</option>
-                      <option value="西藏">西藏</option>
-                      <option value="甘肃省">甘肃省</option>
-                      <option value="台湾省">台湾省</option>
-                      <option value="香港">香港</option>
-                      <option value="澳门">澳门</option>
-                      <option value="国外">国外</option>
-                    </select>
-                  </li>
-                  <li id='field_2_15' class='gfield gf_left_half gfield_contains_required' >
-                    <label class='gfield_label' for='input_2_15'>
-                      电话
-                      <span class='gfield_required'>*</span>
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_15' id='input_2_15' type='text' value='' class='medium'  tabindex='8'   />
-                    </div>
-                  </li>
-                  <li id='field_2_3' class='gfield    gf_left_half           gfield_contains_required' >
-                    <label class='gfield_label' for='input_2_3'>
-                      邮箱
-                      <span class='gfield_required'> *</span>
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_3' id='input_2_3' type='text' value='' class='large'  tabindex='9'   />
-                    </div>
-                  </li>
-                  <li id='field_2_7' class='gfield    gf_left_third' >
-                    <label class='gfield_label' for='input_2_7'>
-                      预约时间（培训日期 #1）
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_7' id='input_2_7' type='datetime' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='10' />
-                    </div>
-                    <input type='hidden' id='gforms_calendar_icon_input_2_7' class='gform_hidden' /> 
-                  </li>
-                  <li id='field_2_12' class='gfield    gf_middle_third' >
-                    <label class='gfield_label' for='input_2_12'>
-                      预约时间（培训日期 #2）
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_12' id='input_2_12' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='11' />
-                    </div>
-                    <input type='hidden' id='gforms_calendar_icon_input_2_12' class='gform_hidden'>
+                </li>
+               <li id='field_2_11' class='gfield    gf_right_half' >
+                    <input name='name' id='input_2_11' type='text' placeholder="姓名" value='' class='large'  tabindex='4'   />
+                </li>
+                <li id='field_2_5' class='gfield    gf_left_half' >
+                  <div class='ginput_container'>
+                  <input name='position' id='input_2_5' type='text' placeholder="职位"  value='' class='medium'  tabindex='5'   />
+                  </div>
+                </li>
+                <li id='field_2_4' class='gfield    gf_left_half' >
+                  <div class='ginput_container'>
+                    <input name='department' id='input_2_4' type='text' placeholder="部门" value='' class='large'  tabindex='6'   />
+                  </div>
+                </li>
+                <li id='field_2_6' class='gfield    gf_right_half' >
+                  <select name="province" id="Province" >
+                    <option value="" selected>-- 请选择省份 --</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="北京">北京</option>
+                    <option value="天津">天津</option>
+                    <option value="上海">上海</option>
+                    <option value="重庆">重庆</option>
+                    <option value="广东省">广东省</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="福建省">福建省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="四川省">四川省</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="江西省">江西省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="河北省">河北省</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="海南省">海南省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="内蒙古">内蒙古</option>
+                    <option value="广西">广西</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="宁夏">宁夏</option>
+                    <option value="青海省">青海省</option>
+                    <option value="新疆">新疆</option>
+                    <option value="西藏">西藏</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="台湾省">台湾省</option>
+                    <option value="香港">香港</option>
+                    <option value="澳门">澳门</option>
+                    <option value="国外">国外</option>
+                  </select>
+                </li>
+                <li id='field_2_15' class='gfield gf_left_half gfield_contains_required' >
+                  <div class='ginput_container'>
+                    <input name='phone' id='input_2_15' type='text' value='' placeholder="电话" lass='medium'  tabindex='8'   />
+                  </div>
+                </li>
+                <li id='field_2_3' class='gfield    gf_left_half           gfield_contains_required' >
+                  <div class='ginput_container'>
+                    <input name='email' id='input_2_3' type='text' placeholder="邮箱" value='' class='large'  tabindex='9'   />
+                  </div>
+                </li>
+                <li id='field_2_7' class='gfield    gf_left_third' >
+                  <label class='gfield_label' for='input_2_7'>
+                    预约时间（培训日期 #1）
+                  </label>
+                  <div class='ginput_container'>
+                    <input name='input_7' id='input_2_7' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='10' />
+                  </div>
+                  <input type='hidden' id='gforms_calendar_icon_input_2_7' class='gform_hidden' /> 
+                </li>
+                <li id='field_2_12' class='gfield    gf_middle_third' >
+                  <label class='gfield_label' for='input_2_12'>
+                    预约时间（培训日期 #2）
+                  </label>
+                  <div class='ginput_container'>
+                    <input name='input_12' id='input_2_12' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='11' />
+                  </div>
+                  <input type='hidden' id='gforms_calendar_icon_input_2_12' class='gform_hidden'>
 
-                  </li>
-                  <li id='field_2_14' class='gfield    gf_right_third' >
-                    <label class='gfield_label' for='input_2_14'>
-                      预约时间（培训日期 #3）
-                    </label>
-                    <div class='ginput_container'>
-                      <input name='input_14' id='input_2_14' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='12' />
-                    </div>
-                    <input type='hidden' id='gforms_calendar_icon_input_2_14' class='gform_hidden' />
-                  </li>
-                  <li id='field_2_13' class='gfield' >
-                    <label class='gfield_label' for='input_2_13'>
-                      留言（或者，您从哪里听说我们的？）
-                    </label>
-                    <div class='ginput_container'>
-                      <textarea name='input_13' id='input_2_13' class='textarea medium' tabindex='13'   rows='10' cols='50'>
-                      </textarea>
-                    </div>
-                  </li>
-                  <li id='field_2_17' class='gfield     gform_hidden' >
-                    <input name='input_17' id='input_2_17' type='hidden' class='gform_hidden' value='Web' />
-                  </li>
-                </ul>
-              </div>
-
-              <div class='gform_footer top_label'>
-
-                <input type='image' src='http://robotex.com/wp-content/themes/robotex/images/submit-btn.jpg' id='gform_submit_button_2' class='gform_image_button' alt='Submit' tabindex='14' />
-                <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=' />
-                <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
-                <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
-                <input type='hidden' class='gform_hidden' name='gform_unique_id' value='589490c3be39c' />
-                <input type='hidden' class='gform_hidden' name='state_2' value='YToyOntpOjA7czo2OiJhOjA6e30iO2k6MTtzOjMyOiI2NGEzNjUzMTk4NGYzMjA3MmQ3MDQ2N2I4MjUyNmFiOCI7fQ==' />
-                <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
-                <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
-                <input type='hidden' name='gform_field_values' value='' />
-              </div>
-            </form>
-          </div>
-        <iframe style='display:none;width:0px; height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2'></iframe>
-        <script type='text/javascript'>function gformInitSpinner_2(){jQuery('#gform_2').submit(function(){if(jQuery('#gform_ajax_spinner_2').length == 0){jQuery('#gform_submit_button_2').attr('disabled', true).after('<' + 'img id="gform_ajax_spinner_2"  class="gform_ajax_spinner" src="http://robotex.com/wp-content/plugins/gravityforms/images/spinner.gif" alt="" />');jQuery('#gform_wrapper_2 .gform_previous_button').attr('disabled', true); jQuery('#gform_wrapper_2 .gform_next_button, #gform_wrapper_2 .gform_image_button').attr('disabled', true).after('<' + 'img id="gform_ajax_spinner_2"  class="gform_ajax_spinner" src="http://robotex.com/wp-content/plugins/gravityforms/images/spinner.gif" alt="" />');}} );}jQuery(document).ready(function($){gformInitSpinner_2();jQuery('#gform_ajax_frame_2').load( function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_redirect = contents.indexOf('gformRedirect(){') >= 0;jQuery('#gform_submit_button_2').removeAttr('disabled');var is_form = !(form_content.length <= 0 || is_redirect);if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top);if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner_2();jQuery(document).trigger('gform_page_loaded', [2, current_page]);}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('#gforms_confirmation_message').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith('<' + 'div id=\'gforms_confirmation_message\' class=\'gform_confirmation_message_2\'' + '>' + confirmation_content + '<' + '/div' + '>');jQuery(document).scrollTop(jQuery('#gforms_confirmation_message').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [2]);}, 50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [2, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [2, 1]) } ); </script>
-
+                </li>
+                <li id='field_2_14' class='gfield    gf_right_third' >
+                  <label class='gfield_label' for='input_2_14'>
+                    预约时间（培训日期 #3）
+                  </label>
+                  <div class='ginput_container'>
+                    <input name='input_14' id='input_2_14' type='text' value='' class='datepicker medium mdy datepicker_with_icon' tabindex='12' />
+                  </div>
+                  <input type='hidden' id='gforms_calendar_icon_input_2_14' class='gform_hidden' />
+                </li>
+                <li id='field_2_13' class='gfield' >
+                  <label class='gfield_label' for='input_2_13'>
+                    留言（或者，您从哪里听说我们的？）
+                  </label>
+                  <div class='ginput_container'>
+                    <textarea name='input_13' id='input_2_13' class='textarea medium' tabindex='13'   rows='10' cols='50'>
+                    </textarea>
+                  </div>
+                </li>
+                <li id='field_2_17' class='gfield     gform_hidden' >
+                  <input name='input_17' id='input_2_17' type='hidden' class='gform_hidden' value='Web' />
+                </li>
+              </ul>
             </div>
+              <!-- input type='submit' value = "提交"/ -->
+            <button type="submit">提交</button>
+            <div class='gform_footer top_label'>
+              <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=' />
+              <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+              <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+              <input type='hidden' class='gform_hidden' name='gform_unique_id' value='589490c3be39c' />
+              <input type='hidden' class='gform_hidden' name='state_2' value='YToyOntpOjA7czo2OiJhOjA6e30iO2k6MTtzOjMyOiI2NGEzNjUzMTk4NGYzMjA3MmQ3MDQ2N2I4MjUyNmFiOCI7fQ==' />
+              <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+              <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+              <input type='hidden' name='gform_field_values' value='' />
+            </div>
+          </form>
         </div>
-</div>
-</div>
-</div>
+    </div>
   </div>
+</div>
+</div>
+</div>
 
   <footer class="footer">
     <div class="container">
@@ -350,51 +344,6 @@
       </div>
     </div>
   </footer>
-
-  <script type="text/javascript">
-    $(function () {
-      // sidebar fixed
-      var $sidebarNav = $(".nav-sidebar");
-      var position = $sidebarNav.offset().top - 40;
-
-      $(window).scroll(function () {
-        var top = $(this).scrollTop();
-
-        if (top > position) {
-          $sidebarNav.addClass("fixed");
-        } else {
-          $sidebarNav.removeClass("fixed");
-        }
-      });
-
-      // scrollspy on sidebar
-      $('body').scrollspy({
-        target: '.nav-sidebar',
-        offset: 30
-      });
-
-      // code highlighter
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-
-      // slider effects
-      var $options_slider_effect = $('[data-option="slider-effect"]');
-      var $slider = $('#spacial-slider');
-
-      $options_slider_effect.click(function (e) {
-        e.preventDefault();
-        $options_slider_effect.removeClass('active');
-        $(this).addClass('active');
-
-        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
-        .addClass($(this).data("class"));
-
-        window.navigate_slider("next");
-      })
-    })
-  </script>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
