@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Reebotic - Robot Technology</title>
+  <title>Reebotic - About</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="dist/theme.min.js"></script>
 </head>
-<body>
+<body class="timeline-page">
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-transparent" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -91,7 +91,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="scenarios.html" class="dropdown-toggle" data-toggle="dropdown">
               行业应用
               <i class="ion-chevron-down"></i>
             </a>
@@ -119,118 +119,114 @@
     </div>
   </nav>
 
-  <div class="index-features-header">
-    <section>
-      <h1 class="stripey">
-        维达陆地机器人
+  <script type="text/javascript">
+    $(function () {
+      $(".ion-search").click(function (e) {
+        e.preventDefault();
+
+        $(".search input:text").toggleClass("nice").focus();
+      });
+    });
+  </script>
+
+  <div class="blog-timeline-header">
+    <div class="container">
+      <div class="search">
+        <form>
+          <input type="text" class="form-control" placeholder="Search the blog...">
+          <a href="#">
+            <i class="ion-search"></i>
+          </a>
+        </form>
+      </div>
+      <h1>
+        <a href="index.html">
+          Reebotic, Inc. 
+        </a>
       </h1>
-      <p class="stripey">
-        模块多样，功能丰富，定制您的专属机器人。
+      <p class="slogan">
+        自
       </p>
-      <p class="stripey">
-        操作简单，应用灵活，为您搜索危险的地方。
-      </p>
-    </section>
+    </div>
   </div>
 
-  <div class="index-features-nav">
-    <ul class="nav features">
-      <li class="active">
-        <a href="#ptz" class="scroll feature featureFadeInDown">
-          云台摄像机模块
-        </a>
-      </li>
-      <li>
-        <a href="#arm" class="scroll feature featureFadeInDown">
-          多自由度机械臂模块
-        </a>
-      </li>
-      <li>
-        <a href="#gas" class="scroll feature featureFadeInDown">
-          有害气体及辐射探测模块
-        </a>
-      </li>
-      <li>
-        <a href="#hitch" class="scroll feature featureFadeInDown">
-          自卸载式牵引车模块
-        </a>
-      </li>
-    </ul>
-  </div>
+  <div class="blog-timeline-wrapper">
+    <div class="container">
 
-  <div id="ptz" class="index-features-friends">
-    <section class="clearfix">
-      <img src="images/unsplash/photo_1345.jpg" class="browser" />
-
-      <div class="info">
-        <h3>千里眼、顺风耳</h3>
-        <h4>
-          Powerful dashboard that lets you control your site, store or portfolio.
-        </h4>
-        <p>
-          Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included. It works in all browsers and your clients can pay instantly, to improve their experience.
-        </p>
+      <div class="post left">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar1.jpg');">
+          <div class="intro">
+            <h4>Avatar I ---- 2009年</h4>
+            <p>
+              <br />
+              便携式、远程监侦陆地机器人
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
-  </div>
 
-  <div id="arm" class="index-features-camera">
-    <section>
-      <h3>远程灵巧手臂</h3>
-      <h4>
-        Apply filters to your pictures, change settings and tag all your friends
-      </h4>
-      <div class="pic">
-        <img src="images/unsplash/photo_0018.jpg" class="img-responsive" />
+      <div class="post left">
+        <div class="marker"></div>
+
       </div>
-    </section>
-  </div>
-
-  <div id="gas" class="index-features-user">
-    <header>
-      <h3>超级嗅觉</h3>
-      <h4>
-        We have the best security infrastructure available, your files will always be safe and we make daily backups
-      </h4>
-    </header>
-    <section class="clearfix">
-      <img src="images/unsplash/photo_0077.jpg" class="devices pull-right" />
-
-      <h4>Access to your business on the go</h4>
-      <p>
-        Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
-      </p>
-      <p>
-        Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
-      </p>
-      <div class="icons">
-        <i class="ion-monitor"></i>
-        <i class="ion-ipad"></i>
-        <i class="ion-iphone"></i>
+      <div class="post">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar2.jpg');">
+          <div class="intro">
+            <h4>Avatar II ---- 2011年</h4>
+            <p>
+              <br />
+              大变焦云台摄像机 
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="post">
+        
+      </div>
+      <div class="post left">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar3.jpg');">
+          <div class="intro">
+            <h4>Avatar III ---- 2013年</h4>
+            <p>
+              <br />
+              模块化设计
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        
+      </div>
+      <div class="post left">
+
+      </div>
+      <div class="post">
+        
+      </div>
+      <div class="post">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar4.jpg');">
+          <div class="intro">
+            <h4>Avatar IV ---- 2017年底</h4>
+            <p>
+              <br />
+              人工智能、云计算
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="pager">
+        <a href="#">To the Future... ... </a>
+      </div>
+    </div>
   </div>
-    <div id="hitch" class="index-features-user">
-    <header>
-      <h3>自卸载式拖车</h3>
-      <h4>
-        We have the best security infrastructure available, your files will always be safe and we make daily backups
-      </h4>
-    </header>
-    <section class="clearfix">
-      <img src="images/unsplash/photo_1580.jpg" class="devices pull-right" />
 
-      <h4>Access to your business on the go</h4>
-      <p>
-        Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
-      </p>
-      <p>
-        Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
-      </p>
-    </section>
-  </div>  
-
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="bottom">
         <ul>
@@ -238,38 +234,26 @@
           <li><a href="legalandprivacy.html">隐私 &amp 法务</a></li>
           <li><a href="contact_us.html">联系我们</a></li>
           <li><a href="careers.html">工作机会</a></li>
-          <li><a href="#">中文／英文</a></lií>
+          <li><a href="index_en.html">中文／英文</a></lií>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script type="text/javascript">
-    $(function () {
-      var $features = $(".index-features-nav .features");
-      var position = $features.offset().top + 40;
-
-      $(window).scroll(function () {
-        var top = $(this).scrollTop();
-
-        if (top > position && !$features.hasClass("fixed")) {
-          $features.addClass("fixed fadeInDown");
-        } else if (top < position && $features.hasClass("fixed")) {
-          $features.removeClass("fixed fadeInDown");
-          $features.find("li:eq(0)").addClass("active")
-        }
-      });
-
-      $('body').scrollspy({ 
-        target: '.index-features-nav'
-      });
-
-      setTimeout(function () {
-        $(".feature").removeClass("featureFadeInDown");
-      }, 1500);
-    });
-  </script>
-
+  <div id="settings-module">
+    <a href="#" id="open-settings">
+      <i class="fa fa-cog"></i>
+    </a>
+    <div class="menu-wrap">
+      <nav class="menu">
+        <div class="title">Navbar</div>
+        <div class="options">
+          <a href="#" data-option="navbar" data-class="navbar-default">White</a>
+          <a href="#" data-option="navbar" data-class="navbar-inverse">Dark</a>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
