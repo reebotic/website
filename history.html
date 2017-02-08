@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Reebotic - Career</title>
+  <title>Reebotic - About</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="dist/theme.min.js"></script>
 </head>
-<body>
+<body class="timeline-page">
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-transparent" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -91,15 +91,15 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="scenarios.html" class="dropdown-toggle" data-toggle="dropdown">
               行业应用
               <i class="ion-chevron-down"></i>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="pricing.html">远程巡检</a></li>
-              <li><a href="pricing-charts.html">安防排爆</a></li>
-              <li><a href="careers.html">气体监测</a></li>
-              <li><a href="career-post.html">危险品转运</a></li>
+              <li><a href="scenarios.html#surveillance">远程巡检</a></li>
+              <li><a href="scenarios.html#secure">安防排爆</a></li>
+              <li><a href="scenarios.html#gas_detection">气体监测</a></li>
+              <li><a href="scenarios.html#danger_transportation">危险品转运</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -119,82 +119,111 @@
     </div>
   </nav>
 
-  <div class="career-post-header">
-    <section class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>
-            嵌入式电子工程师
-          </h1>
-          <p>
-            北京, 中国
-          </p>
-        </div>
+  <script type="text/javascript">
+    $(function () {
+      $(".ion-search").click(function (e) {
+        e.preventDefault();
+
+        $(".search input:text").toggleClass("nice").focus();
+      });
+    });
+  </script>
+
+  <div class="blog-timeline-header">
+    <div class="container">
+      <div class="search">
+<!-- 
+        <form>
+          <input type="text" class="form-control" placeholder="Search the blog...">
+          <a href="#">
+            <i class="ion-search"></i>
+          </a>
+        </form>
+-->
       </div>
-    </section>
+      <h1>
+        <a href="index.html">
+          Reebotic, Inc. 
+        </a>
+      </h1>
+      <p class="slogan">
+        全球轻量级陆地机器人研发领导者Reebotic公司位于美国硅谷，致力于通过研发最先进的远程机器人来完成危险环境下的各种作业任务。Reebotic旗下的Avatar（维达）系列机器人自2009年上市以来已有1000多台机器人服务于美国、加拿大、澳大利亚、瑞典、韩国、墨西哥等多个国家和地区。
+      </p>
+    </div>
   </div>
 
-  <div class="career-post-content">
+  <div class="blog-timeline-wrapper">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <section>
-            <h4>
-              职位概况
-            </h4>
-            <p>
-              作为研发团队的一员，你将有机会接触"cutting edge"机器人技术。嵌入式电子工程师需要参与到下一代机器人产品的硬件构架设计、器件评估与选型、模块设计与系统boot up工作中。 我们在寻找一位对机器人技术富有激情，并具有极强的动手能力的嵌入式电子工程师。
-            </p>
-          </section>
-          <section>
-            <h4>职责</h4>
-            <ul>
-              <li>
-                参与Reebotic下一代机器人产品硬件构架方案讨论，并提出富有建设性的意见与创意方案；  
-              </li>
-              <li>
-                完成嵌入式电路的Block Diagram设计与评估；
-              </li>
-              <li>
-                完成基于Cadence或Altium Designer的电路设计；
-              </li>
-              <li>
-                完成符合安规的Layout设计；
-              </li>
-            </ul>
-          </section>
-         
-          <section>
-            <h4>
-              职位要求
-            </h4>
-            <ul>
-              <li>
-                三年以上嵌入式系统开发经验
-              </li>
-              <li>
-                “hands-on” developer & fast learner;
-              </li>
-              <li>
-                熟练掌握Cadence或Altium Designer电路设计;
-              </li>
-              <li>
-                熟练掌握Linux操作系统 (e.g. UBoot) 及Linux环境下bash script;
-              </li>
-              <li>
-                熟练掌握C/C++；
-              </li>
-            </ul>
-          </section>
-          <section>
 
-          <div class="apply-now">
-            对该职位感兴趣?
-            <a href="#" class="btn-shadow btn-shadow-primary">
-              现在申请
-            </a>
+      <div class="post left">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar1.jpg');">
+          <div class="intro">
+            <h4>Avatar I ---- 2009年</h4>
+            <p>
+              <br />
+              便携式、远程监侦陆地机器人
+            </p>
           </div>
         </div>
+      </div>
+
+      <div class="post left">
+        <div class="marker"></div>
+
+      </div>
+      <div class="post">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar2.jpg');">
+          <div class="intro">
+            <h4>Avatar II ---- 2011年</h4>
+            <p>
+              <br />
+              大变焦云台摄像机 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        
+      </div>
+      <div class="post left">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar3.jpg');">
+          <div class="intro">
+            <h4>Avatar III ---- 2013年</h4>
+            <p>
+              <br />
+              模块化设计
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        
+      </div>
+      <div class="post left">
+
+      </div>
+      <div class="post">
+        
+      </div>
+      <div class="post">
+        <div class="marker"></div>
+        <div class="entry" style="background-image:url('images/avatar/avatar4.jpg');">
+          <div class="intro">
+            <h4>Avatar IV ---- 2017年底</h4>
+            <p>
+              <br />
+              人工智能、云计算
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="pager">
+        <a href="#">To the Future... ... </a>
       </div>
     </div>
   </div>
@@ -207,11 +236,26 @@
           <li><a href="legalandprivacy.html">隐私 &amp 法务</a></li>
           <li><a href="contact_us.html">联系我们</a></li>
           <li><a href="careers.html">工作机会</a></li>
-          <li><a href="#">中文／英文</a></lií>
+          <li><a href="index_en.html">中文／英文</a></lií>
         </ul>
       </div>
     </div>
   </footer>
+
+  <div id="settings-module">
+    <a href="#" id="open-settings">
+      <i class="fa fa-cog"></i>
+    </a>
+    <div class="menu-wrap">
+      <nav class="menu">
+        <div class="title">Navbar</div>
+        <div class="options">
+          <a href="#" data-option="navbar" data-class="navbar-default">White</a>
+          <a href="#" data-option="navbar" data-class="navbar-inverse">Dark</a>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
