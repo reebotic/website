@@ -191,6 +191,10 @@
       &:focus {
         box-shadow: none;
       }
+
+      #elformo_honeypot {
+        display: none;
+      }
     }
 
     [type="submit"] {
