@@ -192,9 +192,7 @@
         box-shadow: none;
       }
 
-      #elformo_honeypot {
-        display: none;
-      }
+
     }
 
     [type="submit"] {
@@ -215,6 +213,10 @@
         text-align: center;
         padding: 0;
       }
+    }
+
+    #elformo_honeypot {
+      display: none;
     }
   }
 }
