@@ -15,7 +15,6 @@
 
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/vendor/moment.js"></script>
   <script src="dist/theme.min.js"></script>
 </head>
 <body>
@@ -165,12 +164,10 @@
    </div>
   -->
   <div class="container">
-    <form class="form-horizontal" action=" " method="post"  id="contact_form">
-    <!-- fieldset -->
-
     <!-- Form Name -->
+    <form  class="form-horizontal" id="contact_form" action="https://www.elformo.com/forms/e2c9f89c-b0ea-4610-bc59-08952b31b0e7" method="post" accept-charset="UTF-8">
     <!-- Text input-->
-
+    <input id="elformo_honeypot" name="elformo_honeypot" />
     <div class="form-group">
       <label class="col-md-4 control-label">姓名</label>
       <div class="input-group ">
@@ -221,22 +218,22 @@
     <div class="col-md-4">
       <div class="checkbox">
         <label>
-            <input type="checkbox" name="reqest_type" /> 技术支持
+            <input type="checkbox" name="technical_support" /> 技术支持
         </label>
       </div>
       <div class="checkbox">
         <label>
-            <input type="checkbox" name="reqest_type" /> 产品信息
+            <input type="checkbox" name="product_information" /> 产品信息
         </label>
       </div>
        <div class="checkbox">
         <label>
-            <input type="checkbox" name="reqest_type" /> 询价报价
+            <input type="checkbox" name="pricing_quote_information" /> 询价报价
         </label>
       </div>
        <div class="checkbox">
         <label>
-            <input type="checkbox" name="reqest_type" /> 现场演示
+            <input type="checkbox" name="request_a_demo" /> 现场演示
         </label>
       </div>
     </div>
@@ -246,7 +243,7 @@
   <label class="col-md-4 control-label">您感兴趣的产品</label>
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-        <select name="state" class="form-control selectpicker" >
+        <select name="product_type" class="form-control selectpicker" >
           <option value=" " >请选择产品</option>
           <option>Avatar（维达）监侦机器人</option>
           <option>Colin（柯林）远程机器人</option>
