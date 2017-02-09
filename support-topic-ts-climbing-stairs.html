@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Reebotic - Service</title>
+  <title>Reebotic - Support topic</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,10 +62,10 @@
         </a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-<!--          <li class="active" data-toggle-header-sections-menu> -->
+          <!-- <li class="active" data-toggle-header-sections-menu> -->
           <li class="active">
             <a href="history.html">
               关于Reebotic
@@ -108,7 +108,7 @@
               服务与支持
               <i class="ion-chevron-down"></i>
             </a>
-            <ul class="dropdown-menu" role="menu">
+             <ul class="dropdown-menu" role="menu">
               <li><a href="support_instruction.html">使用指南&解答</a></li>
               <li class="divider"></li>
               <li><a href="support_service.html">故障排除&维修</a></li>
@@ -120,36 +120,81 @@
     </div>
   </nav>
 
-  <div class="support-hero">
+  <div class="support-topic-hero">
     <div class="container">
-
-      <div class="topics clearfix">
-       <a href="#" class="topic">
-        <i class=" icon-tools-2"></i>
-
-        <span>售后维修</span>
-      </a>
-       <a href="#" class="topic">
-        <i class=" icon-telescope "></i>
-
-        <span>检查保养</span>
-      </a>
-     </div>
- 
+      <form>
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="搜索帮助标题" />
+      </form>
     </div>
   </div>
 
-  <div class="support-contact">
+  <div class="support-topic-content">
     <div class="container">
-      <h3>
-        售后服务
-      </h3>
       <div class="row">
-          <p>
-              我们愿意随时为您提供帮助。所有维修检测由认证的技术服务专家团队执行。
-            <a href="contact_us.html">立即发起售后服务请求</a>
-          </p>
-     </div>
+        <div class="col-sm-4">
+          <div class="support-topic-sidebar">
+            <h4>
+              相关问题
+            </h4>
+            <a href="support-topic-ts-signal-strength-problem.html" class="related-link">
+                如果机器人发生信号强度问题或连接不到控制器。
+              </a>
+            <a href="docs/brochure.pdf" class="related-link">
+              产品宣传册
+            </a>
+            <a href="support-topic-ts-ptz-not-work.html" class="related-link">
+              PTZ摄像机无法正常工作
+           </a>
+            <a href="support-topic-ts-flipper-blocking.html" class="related-link">
+              机器人前脚阻挡电池仓门
+            </a>
+            <a href="support-topic-ts-climbing-stairs.html" class="related-link">
+              机器人在爬楼梯时有困难
+            </a>
+            <a href="support-topic-ts-not-power.html" class="related-link">
+              安装电池后机器人无法启动
+            </a>
+         </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="support-topic-body">
+            <h3 class="topic-title">
+            机器人在爬楼梯时有困难
+            </h3>
+            <div class="min-read">
+              3分钟阅读
+            </div>
+            <p>
+        1. 机器人不能在全速下爬楼梯。切换到低速模式。
+            </p>
+            <p>
+2. 爬上第一步后，确保前脚放和地面上平行。按住前脚控制旋钮，直到前脚水平。
+            </p>
+            <p>
+3. 机器人可能难以爬上某些类型的楼梯（湿滑的金属楼梯和湿润时有光滑边缘的楼梯）。擦干机器人，然后再次尝试。
+            </p>
+            </p>
+4. 如果前脚未正确操作，机器人将无法爬上第一个台阶。要爬楼梯，把机器人放在低档。定位前脚，使前脚的尖端放在第一阶梯的前缘之上。慢慢地接近第一个楼梯，直到前脚蹼接触第一步的前缘，然后降下前脚蹼，提起机器人的前部，直到前脚处于“平”位置。现在慢慢地驱动机器人上楼梯。
+            </p>
+            <p>
+5. 有些楼梯太陡，机器人不能爬。您的机器人随附了一组高角度稳定器。他们也可以单独购买。他们要帮助攀爬特别陡峭的楼梯和更高的物体。有关详细信息，请联系Reebotic。
+            </p>
+            <div class="article-helpful">
+
+              <p>
+                文章有帮助么？
+                <a href="#">
+                  <i class="ion-thumbsup"></i>
+                </a>
+                <a href="#">
+                  <i class="ion-thumbsdown"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -158,7 +203,7 @@
       <div class="bottom">
         <ul>
           <li><a href="#">Reebotic @ 2017 </a></li>
-          <li><a href="legalandprivacy.html">隐私 &amp 法务</a></li>
+          <li><a href="#">隐私 &amp 法务</a></li>
           <li><a href="contact_us.html">联系我们</a></li>
           <li><a href="careers.html">工作机会</a></li>
           <li><a href="index_en.html">中文／英文</a></lií>
@@ -166,8 +211,6 @@
       </div>
     </div>
   </footer>
-
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
