@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Reebotic - Robot Technology</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <link rel="shortcut icon" href="images/reebotic_icon_small.png">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
+
+  <!-- javascript -->
+  <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/theme.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- <div class="global-notification uber-notification">
+    <div class="message">
+        Heads up! <br/> 
+        Use the settings to change the slider effects
+    </div>
+  </div> -->
+
+  <div id="header-sections-menu">
+    <div class="container">
+      <div class="links">
+        <a href="index.html" class="active">
+          <i class="ion-monitor"></i>
+          Business site
+        </a>
+        <a href="agency.html">
+          <i class="ion-erlenmeyer-flask"></i>
+          Agency site
+        </a>
+        <a href="ecommerce/index.html">
+          <i class="ion-bag"></i>
+          E-commerce site
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/reebotic_icon.png" />
+          Reebotic
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+<!--          <li class="active" data-toggle-header-sections-menu> -->
+          <li class="active">
+            <a href="history.html">
+              关于Reebotic
+              <i class="ion-plus"></i>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              陆地机器人
+              <i class="ion-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="product_avatar.html">AVATAR 维达监侦机器人</a></li>
+              <li><a href="product_homeoffice.html">COLIN 柯林远程机器人</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              远望系统
+              <i class="ion-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="product_videoshare.html">Narnia 纳尼亚视频系统</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="scenarios.html" class="dropdown-toggle" data-toggle="dropdown">
+              行业应用
+              <i class="ion-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="scenarios.html#surveillance">远程巡检</a></li>
+              <li><a href="scenarios.html#secure">安防排爆</a></li>
+              <li><a href="scenarios.html#gas_detection">气体监测</a></li>
+              <li><a href="scenarios.html#danger_transportation">危险品转运</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              服务与支持
+              <i class="ion-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="support_instruction.html">使用指南&解答</a></li>
+              <li class="divider"></li>
+              <li><a href="support_service.html">故障排除&维修</a></li>
+            </ul>
+          </li>
+          <li><a href="request_demo.html" class="rounded">预约演示</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="index-slider-header">
+    <div id="spacial-slider" class="slider-component fxLetMeIn">
+      <ul class="itemwrap">
+        <li class="slide slide--left current">
+          <div class="container">
+            <h2 class="customFadeInUp">
+              维达系列陆地机器人
+            </h2>
+            <h3 class="customFadeInUp">
+              模块化设计，定制您的专属机器人
+            </h3>
+          </div>
+
+          <div class="pic" style="background-image: url('images/unsplash/photo_1361.jpg');">
+          </div>
+        </li>
+        <li class="slide slide--left">
+          <div class="container">
+            <h2 class="customFadeInUp">
+              您的远程帮手
+            </h2>
+            <h3 class="customFadeInUp">
+              在安全距离即可处置前方危险情况
+            </h3>
+          </div>
+
+          <div class="pic" style="background-image: url('images/unsplash/photo_0121.jpg');">
+          </div>
+        </li>
+        <li class="slide slide--right">
+          <div class="container">
+            <h2 class="customFadeInUp">
+              <br />
+              危险气体及辐射实时监测
+            </h2>
+            <h3 class="customeFadeInUp">
+              实时监测，为您提供环境探测预警
+          </div>
+
+          <div class="pic" style="background-image: url('images/unsplash/photo_0123.jpg');">
+          </div>
+        </li>
+      </ul>
+      <nav>
+        <a class="prev" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+        <a class="next" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="index-devices mobile-alt">
+    <section class="clearfix">
+      <img src="images/robot/robot_01.jpg" class="devices" />
+
+      <h4>维达陆地机器人平台</h4>
+      <p>
+        维达系列陆地机器人是一款紧凑、多用途的机器人平台。玻璃纤维配合钛合金材料的使用让机体轻盈坚固。巧妙的多功能模块即插即用，满足您不同场合的使用需求。精心优化的快速启动设计，帮助您在应急响应现场争分夺秒。IP-67防护设计，能够应对严寒、高温、雨雪等苛刻工作环境。配备的八核高性能CPU，毫秒级低延时音视频传输系统，工业级危险气体与核辐射监测仪，以及五自由度大范围机械手臂。只需轻推控制摇杆，您即可全面掌控前方危险空间。
+      </p>
+      <!--
+      <div class="icons">
+        <i class="ion-monitor"></i>
+        <i class="ion-ipad"></i>
+        <i class="ion-iphone"></i>
+      </div>
+    -->
+    </section>
+  </div>
+
+  <div class="agency-portfolio">
+    <div class="container">
+      <h2>
+        自2009年至今，已有1000多台维达系列陆地机器人服务于世界各地。
+      </h2>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_0004.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_0078.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_0016.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_1434.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_1532.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_1585.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_0710.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_1338.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="project">
+            <span style="background-image:url('images/unsplash/photo_1339.jpg');" class="pic">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-slider-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="feature">
+            <h3>
+              <img src="images/icons/module-icon.png" style="top:0px;" />
+
+              模块丰富
+            </h3>
+            <p>
+              种类多样的功能模块，即插即用，适用多种场合需求。
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="feature">
+            <h3>
+              <img src="images/icons/fast_deploy-icon.png" />
+
+              快速部署
+            </h3>
+            <p>
+              5分钟启动时间，响应迅速，应多突发事件争分夺秒。
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="feature">
+            <h3>
+              <img src="images/icons/real_time-icon.png" style="top:0px;" />
+
+              实时回传
+            </h3>
+            <p>
+              毫秒级超低延时音视频传输系统，即时了解现场情况。
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="feature">
+            <h3>
+              <img src="images/icons/all_terrain-icon.png" style="top:0px;" />
+
+              通过性强
+            </h3>
+            <p>
+              可调节接近角和电控差速设计，轻松应对沙石路况、废墟环境、及室内外楼梯攀爬等场合需求。
+            </p>
+            <a href="product_avatar.html">
+              了解更多...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      var $quotes = $('.client-quote')
+      var $faces = $('.client-picture')
+
+      $faces.click(function (e) {
+        index = $faces.index(this)
+
+        $quotes.removeClass('active')
+        $quotes.eq(index).addClass('active')
+
+        $faces.removeClass('active')
+        $(this).addClass('active')
+      })
+    })
+  </script>
+
+  <div class="call-to-action-signup">
+    <div class="container">
+      <h3>
+        关注Reebotic机器人的最新资讯，及展示活动邀请。
+      </h3>
+      <form class="form-inline" action="https://www.elformo.com/forms/54da803b-a8c1-4d87-bd64-9f1516739bcc" method="post" accept-charset="UTF-8">
+        <input id="elformo_honeypot" name="elformo_honeypot" />
+        <div class="form-group">
+          <input type="text" class="form-control" name="Name" placeholder="姓名" />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="Email" placeholder="电子邮件地址" />
+        </div>
+
+        <button class="btn-shadow btn-shadow-primary" type="submit">
+          联系我们
+        </button>
+
+        <div class="agree"> <a href="legalandprivacy.html">隐私及法务条款</a>.</div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="bottom">
+        <ul>
+          <li><a href="#">Reebotic @ 2017 </a></li>
+          <li><a href="legalandprivacy.html">隐私 &amp 法务</a></li>
+          <li><a href="contact_us.html">联系我们</a></li>
+          <li><a href="careers.html">工作机会</a></li>
+          <li><a href="index_en.html">中文／Engligh</a></lií>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<!--
+  <div id="settings-module">
+    <a href="#" id="open-settings">
+      <i class="fa fa-cog"></i>
+    </a>
+    <div class="menu-wrap menu-wrap--large">
+      <nav class="menu">
+        <div class="title">Navbar</div>
+        <div class="options">
+          <a href="#" data-option="navbar" data-class="navbar-default">White</a>
+          <a href="#" data-option="navbar" data-class="navbar-inverse">Dark</a>
+        </div>
+        <div class="title">Slider Effect</div>
+        <div class="options">
+          <div class="pull-left">
+            <a href="#" data-option="slider-effect" data-class="fxSideSwing">Side Swing</a>
+            <a href="#" data-option="slider-effect" data-class="fxSoftScale">Soft Scale</a>
+            <a href="#" data-option="slider-effect" data-class="fxPressAway">Press Away</a>
+            <a href="#" data-option="slider-effect" data-class="fxPushReveal">Push Reveal</a>
+            <a href="#" data-option="slider-effect" data-class="fxVGrowth">Vertical Growth</a>
+            <a href="#" data-option="slider-effect" data-class="fxArchiveMe">Archive Me</a>
+            <a href="#" data-option="slider-effect" data-class="fxLetMeIn">Let Me In</a>
+          </div>
+          <div class="pull-right">
+            <a href="#" data-option="slider-effect" data-class="fxFortuneWheel">Fortune Wheel</a>
+            <a href="#" data-option="slider-effect" data-class="fxSwipe">Swipe</a>
+            <a href="#" data-option="slider-effect" data-class="fxSnapIn">Snap In</a>
+            <a href="#" data-option="slider-effect" data-class="fxStickIt">Stick It</a>
+            <a href="#" data-option="slider-effect" data-class="fxSlideBehind">Slide Behind</a>
+            <a href="#" data-option="slider-effect" data-class="fxSoftPulse">Soft Pulse</a>
+            <a href="#" data-option="slider-effect" data-class="fxCliffDiving">Cliff Diving</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+-->
+  <script type="text/javascript"> 
+    $(function () {
+      var $settings_module = $("#settings-module"),
+        $options_slider_effect = $("[data-option='slider-effect']", $settings_module),
+        $slider = $("#spacial-slider");
+
+      $options_slider_effect.click(function (e) {
+        e.preventDefault();
+        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
+        .addClass($(this).data("class"));
+
+        window.navigate_slider("next");
+      })
+    });
+  </script>
+
+
+  <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91740511-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
