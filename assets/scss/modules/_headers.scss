@@ -183,7 +183,7 @@
 		
 		.nav-tools {
 			ul.navbar-nav > li > a {
-				color: $default-white;
+				color: $default-dark;
 			}
 			
 			.nav-item {
@@ -200,7 +200,7 @@
 				ul.navbar-nav > li {
 					
 					> a {
-						color: $default-white;	
+						color: $default-dark;	
 					}
 					
 					&:hover,
@@ -324,7 +324,7 @@
 	
 	.navbar-collapse {
 		ul.navbar-nav > li > a {
-			color: $default-white;
+			color: $default-dark;
 		}
 	}
 	
