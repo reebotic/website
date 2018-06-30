@@ -45,7 +45,7 @@
 37. Blog Default
 38. Blog Grid
 39. Blog Card
-40. Blog List 
+40. Blog List
 41. Blog Classic
 42. Blog Single Post
 
@@ -7273,7 +7273,7 @@ h5.heading-1.second-line:after {
     	background-color: $default-light-gray;
     	@include positioning($top: 50%, $left: 10px);
     }
-    
+
     &:after {
     	content: "";
     	position: absolute;
