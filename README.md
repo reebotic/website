@@ -9,7 +9,12 @@ $ npm install
 
 2. Now you're ready to to modify your source files and run gulp to generate new local dist/ files automatically. We've also included a gulp watch command so it keeps track of changes and compile the files on the fly.
 
-3. Start up a simple http server
+3. Start up a simple http server, if you are using python 3.0, `SimpleHTTPServer` module has been merged into `http.server` 
 ```bash
 $ python -m SimpleHTTPServer 8000
+```
+
+4. In browser input
+```
+http://localhost:8000
 ```

@@ -3,6 +3,7 @@
 
 <head>
 <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="dist/theme.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
         $("#nav-placeholder").load("nav.html");
     }); 
     </script>
-
+<!--
   <div class="index-features-header">
     <section>
       <h1 class="stripey">
@@ -41,40 +42,129 @@
       </div>
     </section>
   </div>
-
+-->
   <div class="index-features-nav">
     <ul class="nav features">
       <li class="active">
-        <a href="platform_a.html" class="scroll feature featureFadeInDown" onclick="load_platform(this)">
+          <!-- <a href="platform.html" class="scroll feature featureFadeInDown" onclick="load_platform(this)"> -->
+        <a href="platform_a.html" class="scroll feature featureFadeInDown" >
         Construction Field 
         </a>
       </li>
       <li>
-        <a href="http://stuff.com" class="scroll feature featureFadeInDown" onclick="return load_platform(this);" >
+        <a href="platform_b.html" class="scroll feature featureFadeInDown" >
         Agriculture
         </a>
       </li>
       <li>
-        <a href="#user" class="scroll feature featureFadeInDown">
+        <a href="platform_c.html" class="scroll feature featureFadeInDown">
         Warehouse Scenario
         </a>
       </li>
       <li>
-        <a href="#files" class="scroll feature featureFadeInDown">
+        <a href="platform_d.html" class="scroll feature featureFadeInDown">
         Office Security
         </a>
       </li>
     </ul>
   </div>
 
-<div id="platform-placeholder">
-</div>
-<script type="text/javascript">
-  $(function load_platform(obj) {
-      var page=obj.href;
-    document.getElementById('platform-placeholder').innerHTML='<object data="'+page+'" type="text/html"><object>';
-  })
-</script>
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div id="video"></div>
+
+      <div class="homepage-hero-content">
+        <h2 class="customFadeInUp">
+          Live anywhere you want in the world
+        </h2>
+        <p class="customFadeInUp">
+          Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with people.
+        </p>
+
+        <a href="mailto:info@reebotic.com" class="btn-cta customFadeInUp">
+         Contact Us Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="friends" class="index-features-friends">
+    <section class="clearfix">
+      <img src="http://placehold.it/640x481/666" class="browser" />
+
+      <div class="info">
+        <h3>Message your friends</h3>
+        <h4>
+          Powerful dashboard that lets you control your site, store or portfolio.
+        </h4>
+        <p>
+          Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included. It works in all browsers and your clients can pay instantly, to improve their experience.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="index-browsers">
+    <div class="container">
+      <header>
+        <h3>Everything to improve your site</h3>
+        <p>
+          For marketplaces, store builders, invoicing systems, and any service that helps users get paid.
+        </p>
+      </header>
+      <section>
+        <div class="col-sm-6">
+          <img src="http://placehold.it/640x481/666" class="img-responsive" />
+        </div>
+        <div class="col-sm-6 info">
+          <h4>
+            High fidelity prototypes
+            <div class="label label-success">NEW</div>
+          </h4>
+          <p>
+            Focus on creating and growing your projects and websites, and we‘ll take care of spinning up new designs for your users and making sure they’re great.
+          </p>
+          <p>
+            If you’d prefer to customize your projects directly, Spacial can give you unmatched control for customization. <a href="#">Learn more</a>.
+          </p>
+          <p>
+            Work with all types of customers right out of the box while still getting paid in your preferred currency.
+          </p>
+          <a href="#" class="btn-rounded">
+            Show me more <i class="ion-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="user" class="index-features-user">
+    <header>
+      <h3>Your files are always secured</h3>
+      <h4>
+        We have the best security infrastructure available, your files will always be safe and we make daily backups
+      </h4>
+    </header>
+    <section class="clearfix">
+      <img src="http://placehold.it/481x640/666" class="devices pull-right" />
+
+      <h4>Access to your business on the go</h4>
+      <p>
+        Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
+      </p>
+      <p>
+        Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
+      </p>
+      <div class="icons">
+        <i class="ion-monitor"></i>
+        <i class="ion-ipad"></i>
+        <i class="ion-iphone"></i>
+      </div>
+    </section>
+  </div>
+
+
 
     <script type="text/javascript">
     $(function () {
@@ -92,7 +182,6 @@
       })
     })
   </script>
-    <div id ="footer"></div>
   <script type="text/javascript">
     $(function() {
       $('#video').YTPlayer({
@@ -113,6 +202,7 @@
     });
   </script>
 
+<div id ="footer"></div>
 <script>
 $(function(){
     $("#header").load("header.html");
