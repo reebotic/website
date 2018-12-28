@@ -1,3 +1,72 @@
+.spec-header {
+  min-height: 680px;
+  background-image: url('../images/unsplash/platform_3D.JPG');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  @media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+  }
+
+  .intro {
+    padding-top: 250px;
+    text-align: center;
+
+    @media(max-width: 767px) {
+      padding: 220px 20px 0;
+    }
+
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: $karla;
+      font-size: 43px;
+      color: #FFFFFF;
+      letter-spacing: 3.8px;
+      line-height: 38px;
+      text-shadow: 0 2px 7px rgba(0,0,0,0.73);
+
+      @media(max-width: 767px) {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      letter-spacing: 1.5px;
+      line-height: 38px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.40);
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+    line-height: 38px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.40);
+
+    .pull-left,
+    .pull-right {
+      @media(max-width: 767px) {
+        float: none !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
 #project-hero {
   height: 650px;
   position: relative;
@@ -14,7 +83,6 @@
       opacity: 1;
     }
   }
-
   .inner-bg {
     position: absolute;
     left: 0;
@@ -24,7 +92,6 @@
     opacity: 0;
     background-size: cover;
     background-position: center center;
-    background-image: url('../images/unsplash/photo-1474843148229-3163319fcc4c.jpeg');
 
     @include transition(opacity 0.5s);
 

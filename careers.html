@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Navigation Bar -->
+  <div class="container-fluid" id="nav-placeholder"></div>
+  <script type="text/javascript">
+    $(function(){
+    $("#nav-placeholder").load("nav.html");
+}); 
+  </script>
+ 
+  <div id="friends" class="index-features-friends">
+    <section class="clearfix">
+      <div class="info">
+        <h3>Coming Soon</h3>
+      </div>
+    </section>
+  </div>
+
+<div id ="footer"></div>
+<script>
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    }); 
+</script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>
