@@ -25,7 +25,7 @@ $(function(){
 
 <div class="index-features-nav">
   <ul class="nav features">
-    <li class="active">
+    <li>
         <!-- <a href="platform.html" class="scroll feature featureFadeInDown" onclick="load_platform(this)"> -->
       <a href="product_opt1.html" class="feature featureFadeInDown" >
       Universal UGV Platform (ROS compilable)
@@ -41,7 +41,7 @@ $(function(){
       3D LiDAR
       </a>
     </li>
-    <li>
+    <li class="active">
       <a href="product_opt4.html" class="feature featureFadeInDown">
       Night Vision & Gas Detector
       </a>
@@ -54,61 +54,8 @@ $(function(){
         <input type="radio" name="radio-btn" id="img-1" checked />
         <li class="dot-slide-container">
             <div class="dot-slide">
-              <img src="images/unsplash/platform_3D.JPG" class="img-responsive" />
+              <img src="images/unsplash/platform_nightvision.JPG" class="img-responsive" />
             </div>
-            <!--
-            <div class="nav">
-                <label for="img-3" class="prev">&#x2039;</label>
-                <label for="img-2" class="next">&#x203a;</label>
-            </div>
-            -->
-        </li>
-
-
-        <input type="radio" name="radio-btn" id="img-2" />
-        <li class="dot-slide-container">
-            <div class="dot-slide">
-              <img src="http://placehold.it/1024x650/666" class="img-responsive" />
-            </div>
-            <!--
-            <div class="nav">
-                <label for="img-1" class="prev">&#x2039;</label>
-                <label for="img-3" class="next">&#x203a;</label>
-            </div>
-            -->
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-3" />
-        <li class="dot-slide-container">
-            <div class="dot-slide">
-              <img src="http://placehold.it/1024x650/666" class="img-responsive" />
-            </div>
-            <!--
-            <div class="nav">
-                <label for="img-1" class="prev">&#x2039;</label>
-                <label for="img-3" class="next">&#x203a;</label>
-            </div>
-            -->
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-4" />
-        <li class="dot-slide-container">
-            <div class="dot-slide">
-              <img src="http://placehold.it/1024x650/666" class="img-responsive" />
-            </div>
-            <!--
-            <div class="nav">
-                <label for="img-1" class="prev">&#x2039;</label>
-                <label for="img-3" class="next">&#x203a;</label>
-            </div>
-            -->
-        </li>
-
-        <li class="nav-dots">
-            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-            <label for="img-4" class="nav-dot" id="img-dot-3"></label>
         </li>
     </ul>
 </div>
@@ -117,7 +64,7 @@ $(function(){
     <div class="container">
       <section>
         <div class="col-sm-6">
-          <img src="images/unsplash/platform_side.PNG" class="device img-responsive" />
+          <img src="images/unsplash/thermal_side.png" class="device img-responsive" />
         </div>
         <div class="col-sm-6 info">
           <div class="label-title">New features</div>
@@ -139,7 +86,7 @@ $(function(){
     <div class="container">
       <section>
         <div class="col-sm-6">
-          <img src="images/unsplash/platform_front.PNG" class="device img-responsive" />
+          <img src="images/unsplash/thermal_front.png" class="device img-responsive" />
         </div>
         <div class="col-sm-6 info">
           <div class="label-title">New features</div>
@@ -161,7 +108,7 @@ $(function(){
     <div class="container">
       <section>
         <div class="col-sm-6">
-          <img src="images/unsplash/platform_top.PNG" class="device img-responsive" />
+          <img src="images/unsplash/thermal_top.png" class="device img-responsive" />
         </div>
         <div class="col-sm-6 info">
           <div class="label-title">New features</div>
@@ -180,6 +127,7 @@ $(function(){
   </div>
 
 <div id ="footer"></div>
+
 <script>
 $(function(){
     $("#header").load("header.html");
