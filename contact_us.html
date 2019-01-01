@@ -3,11 +3,6 @@
 
 <head>
 <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqmvGvBB3bMxhwBSTV4syEWIEZThULFhs"></script>
-<script src="dist/theme.min.js"></script>
-
-<script src="dist/jquery.min.js"></script>
-<script src="dist/highlight.min.js"></script>
 <script src="dist/theme.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
@@ -40,46 +35,6 @@
   });
   </script>
 
-
-  <script type="text/javascript">
-// Wait for the DOM to be ready
-    $(function() {
-      $("form[name='testdrive']").validate({
-        // Specify validation rules
-        rules: {
-          // The key name on the left side is the name attribute
-          // of an input field. Validation rules are defined
-          // on the right side
-          name: "required",
-          email: {
-            required: true,
-            // Specify that email should be validated
-            // by the built-in "email" rule
-            email: true
-          },
-          password: {
-            required: true,
-            minlength: 5
-          }
-        },
-        // Specify validation error messages
-        messages: {
-          name: "Please enter your name",
-          password: {
-            required: "Please enter your password",
-            minlength: "Password should be at least 5 digits"
-          },
-          email: "invalid email address"
-        },
-        // Make sure the form is submitted to the destination defined
-        // in the "action" attribute of the form when valid
-        submitHandler: function(form) {
-          form.submit();
-        }
-      });
-    });
- </script>
-
 <div class="agency-alt-contact-info">
     <div class="container">
         <div class="row">
@@ -100,7 +55,7 @@
                     <!--       <div class="main_content_wrapper has_right_sidebar no_left_sidebar"> -->
                     <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_2' ><a id='gf_2' name='gf_2' class='gform_anchor' ></a>
                     <!-- form action="" name="testdrive" -->
-                    <form action="https://www.elformo.com/forms/492ae77c-f49a-4b7b-ad5e-7c40bd6f1e1a" method="post" accept-charset="UTF-8">
+                    <form action="https://www.elformo.com/forms/2a7a04c6-41c2-4f92-95b2-2a1ec87f3948" method="post" accept-charset="UTF-8">
                       <div class='gform_body'>
                         <ul id='gform_fields_2' class='itemwrap' >
                           <li id='field_2_11' class='gfield    gf_right_half' >
@@ -128,7 +83,7 @@
                           </li>
                         </ul>
                       </div>
-                      <button type="submit" class="btn-cta">Submit</button>
+                      <button type="submit">Submit</button>
                     </form>
                   </div>
                 </div>
@@ -138,8 +93,6 @@
         </div>
       </div>
 
-
-
   <div id ="footer"></div>
   <script>
   $(function(){
@@ -147,110 +100,6 @@
       $("#footer").load("footer.html");
   });
   </script>
-
-    <script type="text/javascript">
-    $(function () {
-        // Google maps
-        var mapLocation = new google.maps.LatLng(32.689593,-117.18039);
-
-        var map = new GMaps({
-            streetViewControl : false,
-            overviewMapControl: false,
-            mapTypeControl: false,
-            panControl : false,
-            scrollwheel: false,
-            center: mapLocation,
-            el: '#map',
-            zoom: 15,
-            styles: [
-              {
-                "featureType": "administrative",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                  {
-                    "color": "#444444"
-                  }
-                ]
-              },
-            {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [
-                  {
-                    "color": "#f2f2f2"
-                  }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [
-                  {
-                "visibility": "off"
-                  }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [
-                  {
-                    "saturation": -100
-                  },
-                  {
-                    "lightness": 45
-                  }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [
-                  {
-                    "visibility": "simplified"
-                  }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "labels.icon",
-                "stylers": [
-                  {
-                    "visibility": "off"
-                  }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [
-                  {
-                    "visibility": "off"
-                  }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [
-                  {
-                    "color": "#c0e4f3"
-                  },
-                  {
-                    "visibility": "on"
-                  }
-                ]
-            }
-           ]
-        });
-
-        map.addMarker({
-            position: mapLocation,
-            icon: 'images/icons/map-icon.png'
-        });
-    });
-</script>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
