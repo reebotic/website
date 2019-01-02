@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="dist/theme.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- <div class="global-notification uber-notification">
+    <div class="message">
+        Heads up! <br/>
+        Use the settings to change the slider effects
+    </div>
+  </div> -->
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Navigation Bar -->
+  <div class="container-fluid" id="nav-placeholder"></div>
+  <script type="text/javascript">
+    $(function(){
+    $("#nav-placeholder").load("nav.html");
+});
+  </script>
+<!--
+  <div class="index-slider-header">
+    <div id="spacial-slider" class="slider-component fxSideSwing">
+      <ul class="itemwrap">
+      <nav>
+        <a class="prev" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+        <a class="next" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+      </nav>
+    </div>
+  </div>
+-->
+
+<div class="career-post-header">
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>
+          Hardware Systems Architect
+        </h1>
+        <p>
+          San Jose, California
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+  <div class="career-post-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <section>
+            <h4>
+              About the position
+            </h4>
+            <p>
+              The UGV Team is seeking talented electrical engineering technical
+              leadership in a System Architecture group. This is an individual
+              contributor design engineering position. The ideal candidate has
+              core competencies in several functional areas of responsibility
+              and system design. The position requires the candidate to lead &
+              drive system technical roadmaps. Experience is expected in analyzing
+              key systems engineering architectural and implementation trade-offs;
+              design of high performance, cost-effective, high quality products.
+              The position requires strong communication, persuasion, and negotiation
+              skills.
+            </p>
+          </section>
+          <section>
+            <h4>Key Qualifications</h4>
+            <ul>
+              <li>
+                MS/PhD EE/CS w/5 years overall experience needed developing embedded system and robotics
+              </li>
+              <li>
+                Must have hands-on experience in prototype bring-up and debugging,
+                functional verification, and manufacturing support
+              </li>
+              <li>
+                Must have strong experience in ROS.
+              </li>
+              <li>
+                Must have strong understanding in network programming
+              </li>
+              <li>
+                Strong programming skill in C++ w/ in depth understanding in OOD/
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>
+              Description
+            </h4>
+            <p>
+              Propose, challenge and influence x-functional roadmaps work with the
+              UGV team on HW/SW robotics technologies. Keep current with technology
+              trends & vendor roadmaps on the robotics sensors, technologies and
+              architectus. Guide early system layout studies Work with Mechanical
+              Engineering and Industrial Design. Assess and guide product system
+              integration feasibility, feature & implementation trade-offs of early
+              layout studies. Utilize schematic and layout tools such as Cadence Concept & Allegro.
+              Predict & prepare for future product system integration & interconnect needs.
+            </p>
+          </section>
+          <section>
+            <h4>How to apply</h4>
+            <ul>
+              <li>
+                A write up explaining who you are as a robotics geek. Some questions you might want to address:
+                <ul>
+                  <li>
+                    What projects have you enjoyed working on?
+                  </li>
+                  <li>
+                    What motivates you?
+                  </li>
+                  <li>
+                    What surprising things have you learned about yourself since starting to program?
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Links to online profiles you use (GitHub, Bitbucket, etc).
+              </li>
+              <li>
+                A description of your work history (whether as a resume, LinkedIn profile, etc).
+              </li>
+            </ul>
+          </section>
+
+          <div class="apply-now">
+            Are you interested in this position?
+            <a href="mailto:info@reebotic.com" class="btn-shadow btn-shadow-primary">
+              Apply now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    $(function () {
+      var $quotes = $('.client-quote')
+      var $faces = $('.client-picture')
+
+      $faces.click(function (e) {
+        index = $faces.index(this)
+
+        $quotes.removeClass('active')
+        $quotes.eq(index).addClass('active')
+
+        $faces.removeClass('active')
+        $(this).addClass('active')
+      })
+    })
+  </script>
+
+  <div id ="footer"></div>
+
+<script>
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+</script>
+
+  <script type="text/javascript">
+    $(function () {
+      var $settings_module = $("#settings-module"),
+        $options_slider_effect = $("[data-option='slider-effect']", $settings_module),
+        $slider = $("#spacial-slider");
+
+      $options_slider_effect.click(function (e) {
+        e.preventDefault();
+        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
+        .addClass($(this).data("class"));
+
+        window.navigate_slider("next");
+      })
+    });
+  </script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>
