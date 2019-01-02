@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="dist/theme.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- <div class="global-notification uber-notification">
+    <div class="message">
+        Heads up! <br/>
+        Use the settings to change the slider effects
+    </div>
+  </div> -->
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Navigation Bar -->
+  <div class="container-fluid" id="nav-placeholder"></div>
+  <script type="text/javascript">
+    $(function(){
+    $("#nav-placeholder").load("nav.html");
+});
+  </script>
+<!--
+  <div class="index-slider-header">
+    <div id="spacial-slider" class="slider-component fxSideSwing">
+      <ul class="itemwrap">
+      <nav>
+        <a class="prev" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+        <a class="next" href="#">
+          <span class="icon-wrap"></span>
+        </a>
+      </nav>
+    </div>
+  </div>
+-->
+
+<div class="career-post-header">
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>
+          Embedded Test Engineer
+        </h1>
+        <p>
+          San Jose, California
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="career-post-content">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <section>
+            <h4>
+              About the position
+            </h4>
+            <p>
+              Some people think inside the box, some people think outside the box.
+              If you have no idea what a box is, this position might be for you.
+              We are looking for an Embedded Test Engineer who is passionate about
+              testing. You will get your hands dirty designing, coding, maintaining,
+              and extending test frameworks across a range of different projects and
+              robot applications. You will code tests side-by-side with developers,
+              anticipate test needs and proactively identify areas of improvement
+              and new tools to incorporate into the testing and automation process.
+              You will own the processes and tools and will advocate adherence to
+              best practices. Using your hardware and software experience you will
+              automate wherever possible using enterprise-level tools. Anything done
+              manually is a candidate for automation.
+            </p>
+          </section>
+          <section>
+            <h4>Key Qualifications</h4>
+            <ul>
+              <li>
+                5+ years testing embedded systems and working in C/C++.
+              </li>
+              <li>
+                3+ years working from requirements, architecture and high-level
+                design to develop automated tests.
+              </li>
+              <li>
+                Work independently with minimal oversight in a highly collaborative environment.
+              </li>
+              <li>
+                Excellent written and verbal communication skills are a must.
+              </li>
+              <li>
+                Self-motivated with excellent time management skills and entrepreneurial spirit.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>How to apply</h4>
+            <ul>
+              <li>
+                A write up explaining who you are as a robotics geek. Some questions you might want to address:
+                <ul>
+                  <li>
+                    What projects have you enjoyed working on?
+                  </li>
+                  <li>
+                    What motivates you?
+                  </li>
+                  <li>
+                    What surprising things have you learned about yourself since starting to program?
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Links to online profiles you use (GitHub, Bitbucket, etc).
+              </li>
+              <li>
+                A description of your work history (whether as a resume, LinkedIn profile, etc).
+              </li>
+            </ul>
+          </section>
+
+          <div class="apply-now">
+            Are you interested in this position?
+            <a href="#" class="btn-shadow btn-shadow-primary">
+              Apply now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    $(function () {
+      var $quotes = $('.client-quote')
+      var $faces = $('.client-picture')
+
+      $faces.click(function (e) {
+        index = $faces.index(this)
+
+        $quotes.removeClass('active')
+        $quotes.eq(index).addClass('active')
+
+        $faces.removeClass('active')
+        $(this).addClass('active')
+      })
+    })
+  </script>
+
+  <div id ="footer"></div>
+
+<script>
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+</script>
+
+  <script type="text/javascript">
+    $(function () {
+      var $settings_module = $("#settings-module"),
+        $options_slider_effect = $("[data-option='slider-effect']", $settings_module),
+        $slider = $("#spacial-slider");
+
+      $options_slider_effect.click(function (e) {
+        e.preventDefault();
+        $slider.removeClass("fxSideSwing fxSoftScale fxPressAway fxPushReveal fxVGrowth fxArchiveMe fxLetMeIn fxFortuneWheel fxSwipe fxSnapIn fxStickIt fxSlideBehind fxSoftPulse fxCliffDiving")
+        .addClass($(this).data("class"));
+
+        window.navigate_slider("next");
+      })
+    });
+  </script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    // e.src='//www.google-analytics.com/analytics.js';
+    // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>
